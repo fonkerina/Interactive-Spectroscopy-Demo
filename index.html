@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <meta http-equiv = 'Content-Security-Policy' 
+          content = "default-src 'self' file:; 
+          style-src 'self' 'unsafe-inline' file:; 
+          font-src 'self'; 
+          script-src 'self' 'unsafe-inline' file:;">
+        <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+        <title>Spectroscopy Simulator</title>
+        <link rel = 'stylesheet' href = 'style.css'>
+    </head>
+    <body>
+        <nav class = 'navbar' role = 'navigation'>
+            <div class = 'navbar-container'>
+                <a href = '/' id = 'web-title'> Spectroscopy Simulator</a>
+                <div class = 'sections'>
+                    <a href = '/demo.html' class = 'navbar__links'> Demo </a>
+                    <a href = '/library.html' class = 'navbar__links'> Library </a>
+                    <a href = '/about.html' class = 'navbar__links'> About </a>
+                </div>
+                <div class = 'searchbox'>
+                    <form action="/public/search/" method="get" class="form-inline" role="search">
+					    <div class="form-group">
+						    <div class="input-group">
+							    <input type="text" value="" placeholder="Search..." name="q" class="form-control">
+						    </div>
+					    </div>
+				    </form>
+                </div>
+                <div id = 'select-language'>
+                    <div class = 'flags'>
+                        <div title="UK" class="sprites-flag_gb"></div>
+                        <div title="France" class="sprites-flag_fr"></div>
+                    </div>
+                    <div class = 'languages'>
+                        <div class = 'lang-button'>
+                            <div class = 'lang-flag'>
+                                <div title = 'en' class = 'flag sprites-flag_gb'>&nbsp;</div>
+                            </div>
+                            <span class = 'caret'></span>
+                        </div>
+                        <ul class = 'lang-dropdown' role = 'menu'>
+                            <li class = 'language' role = 'none'>
+                                <a role = 'menuitem' href = '/'>
+                                    <div title="English (UK)" class="flag sprites-flag_gb">&nbsp;</div>
+                                    English (UK)
+                                </a>
+                            </li>
+                            <li class = 'language' role = 'none'>
+                                <a role = 'menuitem' href = '/'>
+                                    <div title = 'Français (France)' class = 'flag sprites-flag_fr'>&nbsp;</div>
+                                    Français (France)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <script src = "script.js"></script>
+    </body>
+
+</html>
