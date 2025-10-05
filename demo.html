@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Spectroscopy Demo</title>
+  <link rel = "stylesheet" href="style.css">
+  <!-- D3.js CDN -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+  <!-- Select Element -->
+  <label for = "element-select"> </label>
+  <!-- Molecule selector -->
+  <label for="molecule-select">Choose a molecule:</label>
+  <select id="molecule-select">
+    <option value="h2o">H₂O</option>
+    <option value="co2">CO₂</option>
+    <option value="ch4">CH₄</option>
+  </select>
+
+  <button id="load-btn">Show Spectrum</button>
+
+  <!-- Spectrum chart area -->
+  <div id="spectrum"></div>
+
+  <!-- Your JavaScript -->
+  <script src="spectro.js"></script>
+</body>
+</html>
